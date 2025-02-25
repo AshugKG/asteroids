@@ -7,6 +7,7 @@ int main() {
     const int screenHeight = 600;
 
     InitWindow(screenWidth, screenHeight, "Raylib Asteroids");
+    InitAudioDevice();  // Add this line before creating game objects
 
     Game game;
     game.init();
@@ -22,6 +23,7 @@ int main() {
     // Unload game resources
     game.unload();
 
+    CloseAudioDevice();  // Add this line before closing
     CloseWindow(); // Close window and OpenGL context
 
     return 0;
