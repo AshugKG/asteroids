@@ -8,6 +8,7 @@
 class Player {
 public:
     Player(Vector2 position = {400, 300});
+    ~Player();  // Add destructor for cleaning up resources
     void move(float deltaTime);
     void shoot();
     void draw();
@@ -17,8 +18,13 @@ public:
     
 private:
     Vector2 position;
+    Vector2 velocity;
     float rotation;
     float speed;
+    float maxSpeed;
+    float friction;
+    bool thrusting;
+    Sound shootSound;  // Sound effect for shooting
     std::vector<Bullet*> bullets;
 };
 
