@@ -1,7 +1,7 @@
 # raylib-asteroids
 
 ## Overview
-This project is a simple game inspired by the classic Asteroids game. It utilizes the raylib library for graphics and sound, providing a fun and engaging experience.
+This project is a simple game inspired by the classic Asteroids game, build in raylib.
 
 ## Project Structure
 The project is organized into several directories and files:
