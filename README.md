@@ -4,8 +4,6 @@
 This project is a simple game inspired by the classic Asteroids game, build in raylib.
 
 ## Project Structure
-The project is organized into several directories and files:
-
 - **src/**: Contains the source code for the game.
   - **main.cpp**: Entry point of the game.
   - **game.cpp**: Implements the Game class for managing game state and logic.
